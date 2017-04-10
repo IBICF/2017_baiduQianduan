@@ -42,6 +42,9 @@ let data = {
 
 let app = new Observer(data);
 
-data.user.name = "lalala";
 console.log(data.user.age);
 console.log(data.user.name);
+data.user.name = { lastName: 'liang', firstName: 'shaofeng' };
+console.log(data.user.name.lastName);
+data.user.name.lastName = 'lalal';
+console.log(data.user.name.lastName);
